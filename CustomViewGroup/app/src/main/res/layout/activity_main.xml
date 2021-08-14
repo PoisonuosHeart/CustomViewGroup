@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <com.example.customviewgroup.custom_group.CustomGroup
+    <com.example.customviewgroup.custom_group.CalculateQuantityGroup
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:customText="@{item}"
@@ -18,6 +19,29 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
+    <com.example.customviewgroup.custom_group.CalculateQuantityGroup
+android:id="@+id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:customText="@{item}"
+            app:layout_constraintVertical_bias=".7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Change2"
+            app:layout_constraintBottom_toBottomOf="@id/change2"
+            app:layout_constraintTop_toTopOf="@id/change2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/change2"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Change"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/change"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

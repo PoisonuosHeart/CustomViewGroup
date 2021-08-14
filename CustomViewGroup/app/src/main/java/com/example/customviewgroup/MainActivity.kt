@@ -10,5 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
         binding.item = "bbbb"
+        binding.change.setOnClickListener {
+            binding.item = "mishka"
+        }
+        binding.change2.setOnClickListener {
+            binding.custom.setTxt1("ch 2")
+        }
     }
 }
